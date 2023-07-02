@@ -1,0 +1,95 @@
+$colorFull: rgb(0, 253, 253);
+$colorError: #b62a2a;
+
+.container{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+
+    h1{
+        color: $colorFull;
+        text-align: center;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000000;
+    }
+    
+    .main__form{
+        width: 300px;
+        height: 200px;
+        display:flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        background-color:  $colorFull;
+        border-radius: 4px;
+        border: 2px solid #000000;
+       .main__form__container{
+            background-color:  $colorFull;
+            margin-left: 20px;
+            margin-top: 20px;
+            display:inline-block;
+           
+       }
+       
+        input{
+           
+            width: 250px;
+            height: 30px;
+            margin-bottom:10px ;
+            border-radius: 4px;
+            border: 2px solid #000000;
+            outline: none;
+            background-color: #ffffff;
+        }
+
+        button{
+            width: 60px;
+            height: 30px;
+            display: flex;
+            margin-left: auto;
+            margin-right: 20px;
+            color: #ffffff;
+            background-color: #000000;
+            border-radius: 3px;
+            border: none;
+            justify-content: center;
+            line-height: 30px;
+        }
+
+        .main__error{
+            background-color: $colorFull;
+            margin-right: 20px;
+            color: $colorError;
+            font-size: 12px;
+            font-weight: bold;
+            justify-content: right;
+            display: flex;
+        }
+
+      
+    }
+    .main__todo{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 2px solid #000000;
+        background-color: rgb(0, 253, 253);
+        font-size: 16px;
+        font-weight: bold;
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+        overflow:hidden;
+        h3{
+            text-transform: uppercase;
+        }
+    }
+}
+
